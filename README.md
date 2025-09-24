@@ -8,38 +8,46 @@ print (f"Привет, {name}! Через год тебе будет {age+1}.")
 ![Картинка 1](./images/lab01/01.png)
 
 ### Задание 2
-a = float(input("a: "))
-b = float(input("b: "))
-sum = a + b
-average = sum /2
-print (f"sum - {round(sum, 2)}; average - {round(average, 2)}")
+number1 = float(input("a: ").replace(",", "."))
+number2 = float(input("b: ").replace(",", "."))
+print(f"sum={number1 + number2}; avg={round(((number1 + number2) / 2),2)}")
+
 ![Картинка 2](./images/lab01/02.png)# python_labs
 
 ### Задание 3
-price = float(input("Price: "))
-discount = float(input("Discount: "))
-vat = float(input("VAT: "))
+price = 1000
+discount = 10
+vat = 20
 base = price * (1 - discount/100)
 vat_amount = base * (vat/100)
 total = base + vat_amount
-print (f"База после скидки: {base:.2f} ₽\n"
-       f"НДС: {vat_amount:.2f} ₽\n"
-       f"Итого к оплате: {total:.2f} ₽\n")
+print(f"База после скидки: {format(base,'.2f')}")
+print(f'НДС: {format(vat_amount,'.2f')}')
+print(f"Итого к оплате: {format(total,".2f")}")
 ![Картинка 3](./images/lab01/03.png)# python_labs
 
 ### Задание 4
-m = int(input("Целые минуты: "))
-hour = m // 60
-min = m % 60
-print (f"{hour}:{min:02d}")
+minn = int(input("Минуты: "))
+hours = (minn // 60) % 24
+minn_time = (minn % 60)
+if minn_time < 10:
+    minn_time = "0" + str(minn_time)
+print(f"{hours}:{minn_time}")
 ![Картинка 4](./images/lab01/04.png)# python_labs
 
 ### Задание 5
-FIO = input("Введите полное ФИО: ")
-length = len(FIO.strip())
-parts = FIO.split()
-initials = "".join(word[0].upper() for word in parts) + "."
-print (f"ФИО: {FIO}\n"
-       f"Инициалы: {initials}\n"
-       f"Длина (символов): {length}")
+fio= input("фио: ")
+countt = 0
+while '  ' in fio:
+    fio = fio.replace('  ', ' ')
+words = fio.split()
+fio_w_2spases = fio.rstrip().lstrip()
+first_letters = []
+str_first_letters = ''
+for word in words:
+    first_letters.append(word[0])
+for letter in first_letters:
+    str_first_letters +=  letter
+print(f"Инициалы: {str_first_letters}")
+print(f"Длина (символов): {len(fio_w_2spases)}")
 ![Картинка 5](./images/lab01/05.png)# python_labs
