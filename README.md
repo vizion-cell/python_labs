@@ -7,7 +7,7 @@ name = (input("Имя: "))
 age = int(input("Возраст: "))
 print (f"Привет, {name}! Через год тебе будет {age+1}.")
 ```
-![Картинка 1](./images/lab01/01.png)
+![Картинка 1](./images/lab01/001.png)
 
 ### Задание 2
 ```python
@@ -15,7 +15,7 @@ number1 = float(input("a: ").replace(",", "."))
 number2 = float(input("b: ").replace(",", "."))
 print(f"sum={number1 + number2}; avg={round(((number1 + number2) / 2),2)}")
 ```
-![Картинка 2](./images/lab01/02.png)# python_labs
+![Картинка 2](./images/lab01/002.png)# python_labs
 
 ### Задание 3
 ```python
@@ -29,7 +29,7 @@ print(f"База после скидки: {format(base,'.2f')}")
 print(f'НДС: {format(vat_amount,'.2f')}')
 print(f"Итого к оплате: {format(total,".2f")}")
 ```
-![Картинка 3](./images/lab01/03.png)# python_labs
+![Картинка 3](./images/lab01/003.png)# python_labs
 
 ### Задание 4
 ```python
@@ -40,7 +40,7 @@ if minn_time < 10:
     minn_time = "0" + str(minn_time)
 print(f"{hours}:{minn_time}")
 ```
-![Картинка 4](./images/lab01/04.png)# python_labs
+![Картинка 4](./images/lab01/004.png)# python_labs
 
 ### Задание 5
 ```python
@@ -59,4 +59,4 @@ for letter in first_letters:
 print(f"Инициалы: {str_first_letters}")
 print(f"Длина (символов): {len(fio_w_2spases)}")
 ```
-![Картинка 5](./images/lab01/05.png)# python_labs
+![Картинка 5](./images/lab01/005.png)# python_labs
